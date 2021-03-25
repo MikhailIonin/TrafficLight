@@ -20,8 +20,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         trafficLights[0].alpha = 0.3
+        trafficLights[0].layer.cornerRadius = 80
         trafficLights[1].alpha = 0.3
+        trafficLights[1].layer.cornerRadius = 80
         trafficLights[2].alpha = 0.3
+        trafficLights[2].layer.cornerRadius = 80
         
         startButton.layer.cornerRadius = 20
         
@@ -37,7 +40,6 @@ class ViewController: UIViewController {
         } else if light >= 1 {
             trafficLights[light - 1].alpha = 0.3
         }
-        
         trafficLights[light].alpha = 1
         light += 1
     }
